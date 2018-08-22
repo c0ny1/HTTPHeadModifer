@@ -3,7 +3,7 @@
 
 ![HTTPHeadModifer插件菜单](doc/HTTPHeadModifer.png)
 
-##一、插件功能
+## 一、插件功能
 #### 1.添加IP相关的HTTP头
 方便测试IP伪造，WAF绕过，HTTP盲攻击等等
 
@@ -16,9 +16,9 @@ PS：数据来源于Chrome浏览器插件`User-Agent Switcher for Google Chrome`
 方便测试CROS跨域漏洞
 
 #### 4.更新Cookie
-方便更新数据包为最新可用Cookie，实现代码来自项目[knife](https://github.com/bit4woo/knife)
+方便更新数据包为最新可用Cookie，实现代码来自项目[knife]。(https://github.com/bit4woo/knife)
 
-注意：该功能代码存在问题，正在排查。
+**注意：该功能代码存在问题，正在排查。**
 
 ## 二、最后的话
 HTTPHeadModifer插件的目的在于 **收集渗透测试过程中涉及的HTTP头，方便我们快速添加到数据包中进行测试** 。如有一些遗漏的HTTP头，欢迎补充！
