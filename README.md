@@ -8,7 +8,7 @@
 作用：方便测试IP伪造，WAF绕过，HTTP盲攻击等等
 
 |id|head|description|
-|:---:|:---:|:---:|
+|:---:|:---|:---|
 |1|X-Forwarded-For||
 |2|X-Remote-IP||
 |3|X-Remote-Addr||
@@ -22,7 +22,7 @@
 作用：快速切换各大浏览器在不同平台下的User-Agetn。
 
 |id|head|description|
-|:---:|:---:|:---:|
+|:---:|:---|:---|
 |1|Firefox UserAgent|包含Firefox浏览器在安卓，Mac，Ubuntu，Windows平台下的UserAgent|
 |2|Chorme UserAgent|包含Chorme浏览器在安卓，Mac，Ubuntu，Windows，iPhone等平台下的UserAgent|
 |3|Edge UserAgent|包含Edge浏览器11和12版本的UserAgent|
@@ -40,7 +40,7 @@ PS：数据来源于Chrome浏览器插件`User-Agent Switcher for Google Chrome`
 作用：方便测试CROS跨域漏洞
 
 |id|head|description|
-|:---:|:---:|:---:|
+|:---:|:---|:---|
 |1|Origin|跨域资源共享头|
 
 #### 4.更新Cookie
