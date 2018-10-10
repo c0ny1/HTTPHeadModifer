@@ -9,6 +9,7 @@ public class Utilities {
     public static byte[] addIPHead(IExtensionHelpers helpers, IHttpRequestResponse requestResponse,String key) {
     	Map<String,String> map = new HashMap<String,String>();
     	map.put("X-Forwarded-For","X-Forwarded-For: 127.0.0.1");
+    	map.put("X-Forwarded-Host","X-Forwarded-Host: 127.0.0.1");
     	map.put("X-remote-IP","X-remote-IP: 127.0.0.1");
     	map.put("X-Originating-IP","X-Originating-IP: 127.0.0.1");
     	map.put("X-remote-addr","X-remote-addr: 127.0.0.1");

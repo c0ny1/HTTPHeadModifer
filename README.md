@@ -10,13 +10,14 @@
 |id|head|description|
 |:---:|:---|:---|
 |1|X-Forwarded-For||
-|2|X-Remote-IP||
-|3|X-Remote-Addr||
-|4|X-Originating-IP||
-|5|True-Client-IP||
-|6|Client-IP||
-|7|X-Client-IP||
-|8|X-Real-IP||
+|2|X-Forwarded-Host||
+|3|X-Remote-IP||
+|4|X-Remote-Addr||
+|5|X-Originating-IP||
+|6|True-Client-IP||
+|7|Client-IP||
+|8|X-Client-IP||
+|9|X-Real-IP||
 
 #### 2.切换User-Agent
 作用：快速切换各大浏览器在不同平台下的User-Agetn。

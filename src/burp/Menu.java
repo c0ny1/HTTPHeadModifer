@@ -16,6 +16,7 @@ public class Menu implements IContextMenuFactory {
     private JMenu httpHeadModiferMenu;
     //IPœ‡πÿÕ∑
     private JMenuItem addXFF;
+    private JMenuItem addXForwardedHost;
     private JMenuItem addXRI;
     private JMenuItem addXOI;
     private JMenuItem addXRA;
@@ -102,6 +103,7 @@ public class Menu implements IContextMenuFactory {
         
         httpHeadModiferMenu = new JMenu("HTTPHeadModifer");
         addXFF = new JMenuItem("add X-Forwarded-For");
+        addXForwardedHost = new JMenuItem("add X-Forwarded-Host");
         addXRI = new JMenuItem("add X-remote-IP");
         addXOI = new JMenuItem("add X-Originating-IP");
         addXRA = new JMenuItem("add X-remote-addr");
@@ -221,6 +223,7 @@ public class Menu implements IContextMenuFactory {
         spiderUA.add(slurpSpiderUA);
         
         httpHeadModiferMenu.add(addXFF);
+        httpHeadModiferMenu.add(addXForwardedHost);
         httpHeadModiferMenu.add(addXRI);
         httpHeadModiferMenu.add(addXOI);
         httpHeadModiferMenu.add(addXRA);
@@ -245,6 +248,7 @@ public class Menu implements IContextMenuFactory {
         httpHeadModiferMenu.add(updateCookie);
         
         addXFF.addActionListener(new MenuActionManger(invocation));
+        addXForwardedHost.addActionListener(new MenuActionManger(invocation));
         addXRI.addActionListener(new MenuActionManger(invocation));
         addXOI.addActionListener(new MenuActionManger(invocation));
         addXRA.addActionListener(new MenuActionManger(invocation));
@@ -321,6 +325,10 @@ public class Menu implements IContextMenuFactory {
             try {
 				if(e.getSource() == addXFF){
 					request = Utilities.addIPHead(m_helpers, iReqResp,"X-Forwarded-For");
+				}
+				
+				if(e.getSource() == addXForwardedHost){
+					request = Utilities.addIPHead(m_helpers, iReqResp,"X-Forwarded-Host");
 				}
 				
 				if(e.getSource() == addXRI){
